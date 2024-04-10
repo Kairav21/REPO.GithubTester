@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
         {
             playerName = txtPlayerName.Text;
             dragonName = txtDragonName.Text;
-            rtbLog.Text = "Player Name: " + playerName + "\nDragon Name: " + dragonName;
+            rtbLog.Text = "Player Name: " + playerName + "\nDragon Name: " + dragonName;//Test comment
 
         }
     }
