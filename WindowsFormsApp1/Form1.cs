@@ -20,10 +20,14 @@ namespace WindowsFormsApp1
         }
 
         private void btnSave_Click(object sender, EventArgs e)
-        {
-            playerName = txtPlayerName.Text;
-            dragonName = txtDragonName.Text;
-            rtbLog.Text = "Player Name: " + playerName + "\nDragon Name: " + dragonName;//Test comment
+        {    
+            if (txtPlayerName.Text!="")
+            {
+                playerName = txtPlayerName.Text;
+                dragonName = txtDragonName.Text;
+                rtbLog.Text = "Player Name: " + playerName + "\nDragon Name: " + dragonName;//Test comment
+            }
+         
 
         }
     }
