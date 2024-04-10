@@ -21,13 +21,18 @@ namespace WindowsFormsApp1
 
         private void btnSave_Click(object sender, EventArgs e)
         {    
-            if (txtPlayerName.Text!="")
+            if (txtPlayerName.Text!="" && txtDragonName.Text !="")
             {
                 playerName = txtPlayerName.Text;
                 dragonName = txtDragonName.Text;
                 rtbLog.Text = "Player Name: " + playerName + "\nDragon Name: " + dragonName;//Test comment
             }
-         
+         else
+            {
+                rtbLog.Text = "You didnt  enter anything, and a homeless man kills you.";
+            }
+
+
 
         }
     }
