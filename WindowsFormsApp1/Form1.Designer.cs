@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.lblName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPlayerName = new System.Windows.Forms.TextBox();
             this.lbldragonName = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDragonName = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.rtbLog = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
@@ -45,13 +45,13 @@
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Player Name";
             // 
-            // textBox1
+            // txtPlayerName
             // 
-            this.textBox1.Location = new System.Drawing.Point(40, 79);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(781, 48);
-            this.textBox1.TabIndex = 1;
+            this.txtPlayerName.Location = new System.Drawing.Point(40, 79);
+            this.txtPlayerName.Multiline = true;
+            this.txtPlayerName.Name = "txtPlayerName";
+            this.txtPlayerName.Size = new System.Drawing.Size(781, 48);
+            this.txtPlayerName.TabIndex = 1;
             // 
             // lbldragonName
             // 
@@ -62,13 +62,13 @@
             this.lbldragonName.TabIndex = 2;
             this.lbldragonName.Text = "Dragon Name";
             // 
-            // textBox2
+            // txtDragonName
             // 
-            this.textBox2.Location = new System.Drawing.Point(40, 207);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(781, 60);
-            this.textBox2.TabIndex = 3;
+            this.txtDragonName.Location = new System.Drawing.Point(40, 207);
+            this.txtDragonName.Multiline = true;
+            this.txtDragonName.Name = "txtDragonName";
+            this.txtDragonName.Size = new System.Drawing.Size(781, 60);
+            this.txtDragonName.TabIndex = 3;
             // 
             // btnSave
             // 
@@ -78,6 +78,7 @@
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // rtbLog
             // 
@@ -94,9 +95,9 @@
             this.ClientSize = new System.Drawing.Size(921, 520);
             this.Controls.Add(this.rtbLog);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtDragonName);
             this.Controls.Add(this.lbldragonName);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPlayerName);
             this.Controls.Add(this.lblName);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -108,9 +109,9 @@
         #endregion
 
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPlayerName;
         private System.Windows.Forms.Label lbldragonName;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDragonName;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.RichTextBox rtbLog;
     }
